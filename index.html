@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dinhdangfront.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style1.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="grid wide header-wide">
+                <div class="rowcommon header-logo-info">
+                    <div class="col-pc-3 col-tablet-12 col-mobile-12">
+                        <a href= "trangchur.html" class="header-logo">
+                            <img src="./assets/image/logo_HC_1.png" alt="Hinh logo" class="header-logo-img">
+                        </a>
+                    </div>
+                    <div class="col-pc-9 col-tablet-12 col-mobile-12 header-info">
+                        <div class="rowcommon no-gutter header-info-flex">
+                            <div class="col-pc-3 col-tablet-3 col-mobile-12 header-mobile-info">
+                                <img src="./assets/image/icons8-iphone-70.png" alt="Hình điện thoại" class="header-img" style="margin-right: 0px">
+                                <div class="header-mobile-name-number">
+                                    <span class="header-info-name">ĐT</span>
+                                    <span class="header-info-number">0909.884.365</span>
+                                </div>
+                            </div>
+                            <div class="col-pc-3 col-tablet-3 col-mobile-12 header-clock-time">
+                                <img src="./assets/image/icons8-clock-70.png" alt="Hình đòng hồ" class="header-img">
+                                <div class="header-time">
+                                    <span class="header-time-open">Giờ Mở Cửa</span>
+                                    <div class="header-time-weekly">
+                                        <span>Thứ 2 - Thứ 7</span>
+                                        <span>8 AM - 17 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-pc-3 col-tablet-3 col-mobile-12 header-book">
+                                <a href="datlich.html" class="header-book-btn">Đặt lịch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="grid wide header-menu-list">
+                <input type="checkbox" hidden id="btn-bar" onclick="truechkbox(this)">
+                <div class="header-list-item">
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a href="trangchur.html" class="header-item-link">TRANG CHỦ</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="gioithieu.html" class="header-item-link">GIỚI THIỆU</a>
+                        </li>        
+                        <li class="header-item">
+                            <a href="sanpham.html" class="header-item-link">SẢN PHẨM</a>
+                        </li>        
+                        <li class="header-item">
+                            <a href="dichvu.html" class="header-item-link">DỊCH VỤ</a>
+                        </li>        
+                        <li class="header-item">
+                            <a href="giadichvu.html" class="header-item-link">BẢNG GIÁ DỊCH VỤ</a>
+                        </li>        
+                        <li class="header-item">
+                            <a href="baiviet.html" class="header-item-link">BÀI VIẾT</a>
+                        </li>        
+                        <li class="header-item">
+                            <a href="HoatDong.html" class="header-item-link">HOẠT ĐỘNG</a>
+                        </li>        
+                        <li class="header-item">
+                            <a href="lienhe.html" class="header-item-link">LIÊN HỆ</a>
+                        </li>                    
+                    </ul>
+                    <label for="btn-bar" class="header-item-pointer"><i class="fas fa-times header-item-exit"></i></label>
+                </div>
+                <label for="btn-bar" class="header-item-pointer"><i class="fas fa-bars header-menu-bar"></i></label>
+            </div>
+        </div>
+        <div id="bangtruyenanh" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="bangtruyenanh" data-slide-to="0" class="active"></li>
+                <li data-target="bangtruyenanh" data-slide-to="1"></li>
+                <li data-target="bangtruyenanh" data-slide-to="2"></li>
+                <li data-target="bangtruyenanh" data-slide-to="3"></li>
+                <li data-target="bangtruyenanh" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img src="IMG WEB HC/1.jpg" class="d-block w-100">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="IMG WEB HC/2.jpg" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="IMG WEB HC/3.jpg" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="IMG WEB HC/4.jpg" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="IMG WEB HC/5.jpg" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#bangtruyenanh" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bangtruyenanh" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="row text-left">
+                <div class="row col-12">
+                    <div class="col-md-3 col-12 ani8" style="margin-top:50px">
+                        <div class="text-center" data-aos="fade-left" style="margin-top:15px;">
+                            <img src="../../Downloads/b3971f066b269578cc37.jpg" class="rounded-circle" style="width:125px;height:125px">
+                            <p style="font: size 22;px;line-height:29px;padding-top:10px;font-weight: bold;">DỊCH VỤ SỬA MÁY TÍNH</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 ani8" data-aos="fade-left" style="margin-top:50px">
+                        <div class="text-center ani5"  style="margin-top:10px;">
+                            <img src="../../Downloads/b3971f066b269578cc37.jpg" class="rounded-circle" style="width:125px;height:125px">
+                            <p style="font-size:22px;line-height:29px;padding-top:10px;font-weight: bold;">DỊCH VỤ IT HELP DESK</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 ani8" data-aos="fade-left" style="margin-top:50px">
+                        <div class="text-center ani5"  style="margin-top:10px;">
+                            <img src="../../Downloads/b3971f066b269578cc37.jpg" class="rounded-circle" style="width:125px;height:125px">
+                            <p style="font-size:22px;line-height:29px;padding-top:10px;font-weight: bold;">DỊCH VỤ THI CÔNG HỆ THỐNG MẠNG</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 ani8" data-aos="fade-left" style="margin-top:50px">
+                        <div class="text-center ani5"  style="margin-top:10px;">
+                            <img src="../../Downloads/b3971f066b269578cc37.jpg" class="rounded-circle" style="width:125px;height:125px">
+                            <p style="font-size:22px;line-height:29px;padding-top:10px;font-weight: bold;">DỊCH VỤ THI CÔNG HỆ THỐNG CAMERA</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 ani8" data-aos="fade-left" style="margin-top:50px">
+                        <div class="text-center ani5" style="margin-top:10px;">
+                            <img src="../../Downloads/b3971f066b269578cc37.jpg" class="rounded-circle" style="width:125px;height:125px">
+                            <p style="font-size:22px;line-height:29px;padding-top:10px;font-weight: bold;">DỊCH VỤ LẮP ĐẶT WIFI</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 ani8" data-aos="fade-left" style="margin-top:50px">
+                        <div class="text-center ani5"  style="margin-top:10px;">
+                            <img src="../../Downloads/b3971f066b269578cc37.jpg" class="rounded-circle" style="width:125px;height:125px">
+                            <p style="font-size:22px;line-height:29px;padding-top:10px;font-weight: bold;">DỊCH VỤ THIẾT KẾ WEDBSITE</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 ani8" data-aos="fade-left" style="margin-top:50px">
+                        <div class="text-center ani5"  style="margin-top:10px;">
+                            <img src="../../Downloads/b3971f066b269578cc37.jpg" class="rounded-circle" style="width:125px;height:125px">
+                            <p style="font-size:22px;line-height:29px;padding-top:10px;font-weight: bold;">DỊCH VỤ THUÊ MÁY PHOTOCOPY - IN</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 ani8" data-aos="fade-left" style="margin-top:50px">
+                        <div class="text-center ani5"  style="margin-top:10px;">
+                            <img src="../../Downloads/b3971f066b269578cc37.jpg" class="rounded-circle" style="width:125px;height:125px">
+                            <p style="font-size:22px;line-height:29px;padding-top:10px;font-weight: bold;">ĐẠI LÝ PHÂN PHỐI CÁC SẢN PHẨM CNTT</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="text-center " style="margin-top:10px;">
+                <h1><p style="font-size:24px;line-height:29px;padding-top:30px" data-aos="flip-up">VỀ CHÚNG TÔI</p></h1>
+            </div>
+            <div class="row text-left" style="margin-bottom: 40px;">
+                <div class="row col-12 justify-content-center">
+                    <div class="col-xl-4" style="margin-top:30px">
+                        <img src="../../Downloads/b3971f066b269578cc37.jpg" style="width:300px;height:200px" data-aos="fade-right">
+                    </div>
+                    <div class="col-xl-8 col-12" style="margin-top:30px" data-aos="fade-left">
+                        <p style="font-size:18px;line-height:28px">LÀ CÔNG TY HỖ TRỢ CUNG CẤP, BẢO TRÌ, SỬA CHỮA MÁY TÍNH, LAPTOP, MÁY IN, HỆ THỐNG CAMERA,  MẠNG...</p>
+                        <p style="font-size:18px;line-height:28px">CUNG CẤP THIẾT BỊ ĐIỆN TỬ</p>
+                        <p style="font-size:18px;line-height:28px">HỖ TRỢ SỬA CHỮA VỚI ĐỘI NGŨ NHÂN VIÊN KỸ THUẬT THÀNH THẠO DÀY DẶN KINH NGHIỆM</p>
+                        <p style="font-size:18px;line-height:28px">THIẾT KẾ LẮP ĐẶT BẢO TRÌ HỆ THỐNG MẠNG - CAMERA - LAPTOP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:#273B6D;" class="container-fluid" style="max-width: 100%;">
+            <div class="container">
+                <div style="margin-top:10px;text-align: center;" >
+                    <p data-aos="flip-up"style="font-size:46px;line-height:59px;padding-top:50px;color:#FFF;font-weight:bold">TẠI SAO CHỌN HCTECH</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-8 khung1 w-100 " >
+                        <div class="text-center flex-item" data-aos="flip-up" style="background-color:#FFF;border-radius:10px;height:232px">
+                            <img src="IMG WEB HC/icons8-standing-man-100.png" style="width:150px;height:150px">
+                            <p style="font-size:24px;line-height:29px">Đội ngũ kỹ thuật giàu kinh nghiệm</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6  col-lg-6 col-md-8 khung1 w-100 ">
+                        <div class="text-center flex-item" data-aos="flip-up" style="background-color:#FFF;border-radius:10px;height:232px">
+                            <img src="IMG WEB HC/icons8-facebook-like-100.png" style="width:150px;height:150px">
+                            <p style="font-size:24px;line-height:29px">Chuyên nghiệp - Hiệu quả</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-8 khung1 w-100 ">
+                        <div class="text-center flex-item" data-aos="flip-up" style="background-color:#FFF;border-radius:10px;height:232px">
+                            <img src="IMG WEB HC/icons8-services-100.png" style="width:150px;height:150px">
+                            <p style="font-size:24px;line-height:29px">Dịch vụ tận nơi nhanh chóng</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-8 khung1 w-100" style="margin-bottom: 50px;">
+                        <div  class="text-center flex-item" data-aos="flip-up" style="background-color:#FFF;border-radius:10px;height:232px">
+                            <img src="IMG WEB HC/icons8-star-100.png" style="width:150px;height:150px">
+                            <p style="font-size:24px;line-height:29px">Không ngừng đổi mới và sáng tạo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div style="margin-top:10px;text-align: center;" >
+            <p data-aos="flip-up"style="font-size:46px;line-height:59px;padding-top:50px;font-weight:bold">Ý KIẾN KHÁCH HÀNG VỀ HCTECH</p>
+        </div>
+        <div style="background-color:#273B6D;" class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6" style="padding-top: 40px;padding-bottom:40px" data-aos="flip-up">
+                        <img src="IMG WEB HC/phản hổi.jpg" class="rounded-circle" style="width:225px;height:225px;border:3px #FFF inset">
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-6" data-aos="fade-up-left">
+                        <textarea type="text" id="inputEmail" placeholder="ĐOẠN NÀY KHÔNG BIẾT GHI GÌ THANKS" class="form-control" name="txtUse" style="height: 152px;font-size:16px;margin-top:70px;border-radius:20px"></textarea>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div style="margin-top:10px;text-align: center;" >
+            <p data-aos="flip-up"style="font-size:46px;line-height:59px;padding-top:50px;font-weight:bold">ĐẶT LỊCH TRƯỚC</p>
+        </div>
+        <div style="background-color:#C4C4C4;" class="container-fluid" style="max-width: 100%;margin-bottom:30px">
+            <div class="container" data-aos="fade-up-right" style="margin-top:30px;">
+                <div style="">
+                    <p style="font-size:24px;line-height:29px;padding-top: 40px;">Họ và tên</p>
+                    <input type="text" id="inputEmail" class="form-control"  name="txtUse" style="height: 45px;font-size:16px;">
+                    <p style="font-size:24px;line-height:29px;padding-top: 10px;">Địa chỉ email</p>
+                    <input type="text" id="inputEmail" class="form-control"  name="txtUse" style="height: 45px;font-size:16px">
+                    <p style="font-size:24px;line-height:29px;padding-top: 10px;">Vấn đề cần giải quyết</p>
+                    <select class="form-control" id="exampleFormControlSelect1" style="height: 45px;font-size:16px;line-height:17px">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <p style="font-size:24px;line-height:29px;padding-top: 10px;">Lời nhắn đến nhân viên kỹ thuật</p>
+                    <textarea type="text" id="inputEmail" class="form-control" name="txtUse" style="height: 60px;font-size:16px"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-light" style="width:148px;height:48px;margin-top:40px;font-size:18px;margin-bottom:30px;background-color:#273B6D;color:#FFF">Gửi</button>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:#273B6D;" class="container-fluid" style="max-width: 100%;">
+            <div class="container" data-aos="fade">
+                <div class="row">
+                    <div class="col-md-4" style="padding-top: 25px; padding-bottom: 25px;">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-2">
+                                <img src="IMG WEB HC/icons8-user-location-55.png">
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-8">
+                                <strong style="font-size: 18px;line-height:22px;color: #FFF;height:50px">90, Chế Lan Viên, P. Tây Thạnh, Q. Tân Phú, Tp. Hồ Chí Minh</strong> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="padding-top: 25px; padding-bottom: 25px;">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-2">
+                                <img src="IMG WEB HC/icons8-important-mail-30.png" style="width: 50px;height:50px">
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-8">
+                                <strong style="font-size: 18px;line-height:22px;color: #FFF;">hccomputer123@gmail.com</strong>>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="padding-top: 25px; padding-bottom: 25px;">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-2">
+                                <img src="IMG WEB HC/icons8-call-30.png" style="width: 50px;height:50px">
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-8">
+                                <strong style="font-size: 18px;line-height:22px;color: #FFF;">0909.884.365</strong>>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div style="background-color:#999">
+                <div class="container padding " style="padding-top: 30px;">
+                    <div data-aos="fade-up-left">
+                        <h3><p class="text-center font3">ĐĂNG KÝ</p></h3>
+                        <h2><p class="text-center font4">HỘP THƯ CỦA CHÚNG TÔI</p></h2>
+                    </div>
+                    <form class="form-inline" action="sanpham.php" method="get">
+                        <div class="w-100" data-aos="fade-up-right">
+                            <div class="input-group mb-3" style="padding-bottom: 20px;">
+                                <input type="text" class="form-control" placeholder="Địa Chỉ Email" required name="sra" style="height:65px;border-radius:25px 25px 25px 25px;z-index:1;font-size:18px"/>
+                                <div class="input-group-append" style="margin-left:-130px;margin-top:12px;">
+                                    <button class="btn btn-success" type="submit" name="sreach" style="width:112px;height:40px;border-radius:25px 25px 25px 25px;background-color:#273B6D;font-size:18px">Gửi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div style="border-top:#FFF inset;padding-top:30px;border-top-color:#FFF">
+                    <div  class="container">	
+                        <div class="row text-left bot2">
+                            <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div data-aos="slide-right">
+                                    <strong class="font2">LIÊN HỆ</strong>
+                                    <div style="width:260px">
+                                        <i><img src="IMG WEB HC/icons8-marker-30.png" style="width:30px;height:30px"/></i>
+                                        <strong class="front1">: 90 Chế Lan Viên-P. Tây Thạnh-Q. Tân Phú-TP. Hồ Chí Mình</strong>
+                                    </div>
+                                    <div style="width:260px">
+                                        <i><img src="IMG WEB HC/icons8-gmail-30.png" style="width:30px;height:30px"/></i>
+                                        <strong class="front1">: hccomputer123@gmail.com</strong>
+                                    </div>
+                                    <div style="width:260px">
+                                        <i><img src="IMG WEB HC/icons8-call-30.png" style="width:30px;height:30px"/></i>
+                                        <strong class="front1">: 0909.884.365</strong>
+                                    </div>
+                                    <p class="front1">Số ĐKKD: 0315176783 do sở <br />KHĐT TP.HCM cấp 19/07/2018 </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6">	
+                                <div data-aos="slide-right">			
+                                    <p class="font2">CHÍNH SÁCH VÀ QUY ĐỊNH</p>
+                                    <a href="#" class="front1">Chính sách chung</a><br />
+                                    <a href="#" class="front1">Giao Hàng Và Thanh Toán</a><br />
+                                    <a href="#" class="front1">Quy Định Bảo Hành</a><br />
+                                    <a href="#" class="front1">Quy Định Đổi Hàng</a><br />
+                                    <a href="#" class="front1">Chính Sách Bảo Mật Thông Tin</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div data-aos="slide-left">				
+                                    <p class="font2">BÀI VIẾT MỚI</p>
+                                    <a href="#" class="front1">Chính sách chung</a><br />
+                                    <a href="#" class="front1">Giao Hàng Và Thanh Toán</a><br />
+                                    <a href="#" class="front1">Quy Định Bảo Hành</a><br />
+                                    <a href="#" class="front1">Quy Định Đổi Hàng</a><br />
+                                    <a href="#" class="front1">Chính Sách Bảo Mật Thông Tin</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6">	
+                                <div data-aos="slide-left">			
+                                    <div class="container" style="width:371px;height:163px">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <div id="map-container" class="z-depth-1-half map-container">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4944.678929027393!2d106.62512331533433!3d10.811120161507347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be1be98cc89%3A0x21f45e1cf41a3d46!2zOTAgQ2jhur8gTGFuIFZpw6puLCBUw6J5IFRo4bqhbmgsIFTDom4gUGjDuiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1603957643388!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  class="container-fluid padding"  style="background-color:#EBEBEB">	
+                    <div class="row text-left bot3">
+                        <div class="col-12 text-center" style="background-color:#000 !important">
+                            <p style="padding-top:10px;font:Arial, Helvetica, sans-serif;font-size:18px;color:#FFF">CÔNG TY TNHH TM-DV CÔNG NGHỆ HÙNG CƯỜNG</p>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <div class="menu-fixed">
+            <a href="" class="menu-link">
+                <img src="IMG WEB HC/icons8-facebook-40.png" alt="Facebook" style="width: 38px; height: 38px;">
+            </a>
+            <a href="" class="menu-link">
+                <img src="IMG WEB HC/icons8-instagram-40.png" alt="Instagram" style="width: 45px; height: 45px;">
+            </a>
+            <a href="" class="menu-link">
+                <img src="IMG WEB HC/icons8-play-button-40.png" alt="Youtube">
+            </a>
+            <a href="" class="menu-link">
+                <img src="IMG WEB HC/icons8-telegram-app-40.png" alt="Telegram">
+            </a>
+            <a href="" class="menu-link">
+                <img src="IMG WEB HC/icons8-zalo-40.png" alt="Zalo">
+            </a>
+        </div>
+        <div></div>
+    </div>
+    <script src="assets/css/validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/css/scroll-out.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offer:400,
+            once: true 
+        })
+    </script>
+</body>
+</html>
